@@ -110,7 +110,7 @@ def write_result(value1=None, value2=None, value3=None,
     :param value2: 值2 - 测试接口名字
     :param value3: 值3 - 测试用例标题
     :param value4: 值4 - 测试url地址
-    :param value6: 值5 - 测试数据/json
+    :param value5: 值5 - 测试数据/json
     :param value6: 值6 - 预计结果
     :param value7: 值7 - 实际结果
     :param value8: 值8 - 执行情况
