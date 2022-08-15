@@ -46,7 +46,7 @@ class TestCase(unittest.TestCase):
         else:
             self.msg_data = "FAIl"  # 这个值要用来写入
         Excel('w', '../results/results.xlsx') \
-            .write(write_result(value7=str(self.result), value8=self.msg_data))
+            .write(write_result(value4=response.url, value7=str(self.result), value8=self.msg_data))
         # 写入时需转换为str类型 （两个参数为例）
         self.assertEqual(self.result['code'], code)
         self.assertEqual(response.status_code, status)

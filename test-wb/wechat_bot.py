@@ -4,6 +4,7 @@ import requests
 
 
 class WechatRobot(object):
+    """企业微信机器人"""
     URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6f6baff6-6e57-4ff5-b1b3-1c6d503a4c17"  # Webhook地址
 
     def text_message(self, content):
@@ -12,7 +13,7 @@ class WechatRobot(object):
             "text": {
                 "mentioned_mobile_list": ['@all'],
                 "content": content
-               # "mentioned_list": ["jiangan"],
+                # "mentioned_list": ["jiangan"],
             }
         }
         data = json.dumps(data, ensure_ascii=False)
