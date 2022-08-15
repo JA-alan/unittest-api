@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+<form name="login" action="/login" method="post">
+    Hello {{ title }}, please username by:
+    <input type="text" name="user" />
+    Hello {{ title }}, please password by:
+    <input type="text" name="password" />
+    <input type="submit" value="提交">
+
+</form>
+{% endblock %}
